@@ -1,190 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website</title>
-</head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My College</title>
+
   <style>
-  
-  html, body {
-    height: 100%;
-    margin: 0;
-  }
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
 
-  
-  body {
-    
-    background-image: url('smvit.jpg');
-    background-size: cover;           
-    background-position: center;      
-    background-repeat: no-repeat;
-    background-attachment: fixed;    
-    font-family: sans-serif;
-    color: #0b1b2b;                   
-  }
+    body {
+      background-image: url('smvit.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      font-family: sans-serif;
+      color: #0b1b2b;
+    }
 
-  nav {
-    
-    background-color: transparent;
-    color: white;
-    padding: 15px 20px;
-    display:flex;
-    justify-content: space-between;
-    align-items:center;
-    
-  }
+    nav {
+      background-color: transparent;
+      color: white;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
 
-  nav ul{
-    display:flex;
-    list-style:none;
-    gap: 20px;
-  }
-  nav a{
-    color: #fff;        
-    text-decoration: none;
-  }
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+    }
 
-  .hello{
-    text-align: center;
-    padding: 80px 20px;
-    
-  }
-  .hello h1{
-    font-size: 2rem;
-    font-weight: bold;
-    color: #081228;
-    text-shadow: 0 1px 0 rgba(255,255,255,0.25);
-  }
-  .btn{
-    display:inline-block;
-    background: blanchedalmond;
-    color:black;
-    padding: 12px 25px;
-    margin-top:20px;
-    border-radius: 5px;
-  }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+    }
 
-  .section{
-    padding: 15px 20px;
-    text-align: center;
-    line-height: 1.6;
-    background: transparent; 
-  }
+    .hello {
+      text-align: center;
+      padding: 80px 20px;
+    }
 
-  .sectioncourses{
-    display:grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-    gap: 20px;
-    max-width: 1100px;
-    margin: 20px auto;
-    padding: 20px;
-    background: transparent;
-  }
+    .hello h1 {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #081228;
+      text-shadow: 0 1px 0 rgba(255,255,255,0.25);
+    }
 
-  
-  .card{
-    padding: 20px;
-    background: rgba(255,255,255,0.85); 
-    border-radius: 8px;
-    max-width: 400px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.25);
-  }
+    .btn {
+      display: inline-block;
+      background: blanchedalmond;
+      color: black;
+      padding: 12px 25px;
+      margin-top: 20px;
+      border-radius: 5px;
+      text-decoration: none;
+    }
 
-  
-  .sectioncourses > h2 {
-    grid-column: 1 / -1;
-    text-align: left;
-    margin-bottom: 8px;
-  }
+    .section {
+      padding: 15px 20px;
+      text-align: center;
+      line-height: 1.6;
+      background: transparent;
+    }
 
-  
-  .contact-form input {
-    margin:auto;
-    max-width: 500px;
-    text-align: left;
-    background:white;
-    color:#fff;
-    
+    .sectioncourses {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      max-width: 1100px;
+      margin: 20px auto;
+      padding: 20px;
+      background: transparent;
+    }
 
-  }
-  .contact-form input,.contact-form textarea {
-    
-    width: 100%;
-    padding:10px;
-    margin: 10px 0;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    color:#fff
+    .card {
+      padding: 20px;
+      background: rgba(255,255,255,0.85);
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+    }
 
-  }
+    .sectioncourses > h2 {
+      grid-column: 1 / -1;
+      text-align: left;
+      margin-bottom: 8px;
+    }
 
-  footer{
-    color: #fff;
-    text-align:center;
-    padding: 15px;
-    margin-top: 20px;
-  }
-</style>
+    .contact-form {
+      max-width: 600px;
+      margin: 0 auto;
+      text-align: left;
+      background: rgba(255,255,255,0.9);
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    .contact-form label {
+      display: block;
+      margin-top: 12px;
+      color: #081228;
+      font-weight: 600;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      color: #081228;
+      background: #fff;
+      box-sizing: border-box;
+      font-size: 1rem;
+    }
+
+    .contact-form textarea {
+      min-height: 100px;
+      resize: vertical;
+    }
+
+    .contact-form button {
+      margin-top: 10px;
+      padding: 10px 18px;
+      border-radius: 6px;
+      border: none;
+      cursor: pointer;
+      background: #081228;
+      color: #fff;
+      font-size: 1rem;
+    }
+
+    footer {
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+
+    /* small responsive tweak */
+    @media (max-width: 600px) {
+      .hello h1 { font-size: 1.6rem; }
+    }
+  </style>
+</head>
 <body>
 
-    
+  <nav>
+    <h2>My College</h2>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#courses">Courses</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+  </nav>
 
-    <nav>
-        <h2>My College</h2>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#courses">Courses</a></li>
-            <li><a href="#contact us">Contact Us</a></li>
+  <section class="hello">
+    <h1>Welcome to My College</h1>
+    <p>Quality Education for a Brighter Future</p>
+    <a href="#courses" class="btn">Explore courses</a>
+  </section>
 
-        </ul>
-    </nav>
-    <section class="hello">
-        <h1>welcome to my college</h1>
-        <p>Quality Education for Brighter future</p>
-        <a href="acourses" class="btn">Explore courses</a>
+  <section id="about" class="section">
+    <h2>About Us</h2>
+    <p>We provide excellent education and support student development.</p>
+  </section>
 
-    </section>
+  <section id="courses" class="sectioncourses">
+    <h2>Our Courses</h2>
 
-    <section id="about" class="section">
-          <h2>About Us</h2>
-          <p>we provide excellent education and support student development</p>
-    </section>
+    <div class="card">
+      <h3>BE</h3>
+      <p>Bachelor of Engineering</p>
+    </div>
 
-    <section id="courses" class="sectioncourses">
-        <h2>Our Courses</h2>
-        <div class="card">
-            <h2>BE</h2>
-            <p>Bachelor of Engineering</p>
-        </div>
-        <div class="card">
-            <h3>BBA</h3>
-            <p>bachelor of bussiness adminstration</p></div>
-            <div class="card">
-                <h3>BCA</h3>
-                <p>bachelor of computer application</p>
-        </div>
-    </section>
-    <section id="contact" class="section">
-        <h2>contact us</h2>
-        <div class="contact-form">
-            <label>Name</label>
-            <input type="text">
+    <div class="card">
+      <h3>BBA</h3>
+      <p>Bachelor of Business Administration</p>
+    </div>
 
-            <label>Email</label>
-            <input type="email">
+    <div class="card">
+      <h3>BCA</h3>
+      <p>Bachelor of Computer Applications</p>
+    </div>
+  </section>
 
-            <label>message</label>
-            <input type="message">
-            
-            <button>submit</button>
-            <footer>
-                &copy; 2025 my college all rights reserved
-            </footer>
+  <section id="contact" class="section">
+    <h2>Contact Us</h2>
 
-        </div>
+    <div class="contact-form">
+      <form action="#" method="post" novalidate>
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" required>
 
-    </section>
-    
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 My College. All rights reserved.
+  </footer>
+
 </body>
 </html>
