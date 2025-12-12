@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click the Moving Box</title>
+
+    <!-- Correct jQuery Import -->
+    <script 
+        src="https://code.jquery.com/jquery-3.7.1.min.js">
+    </script>
+
+    <style>
+        body {
+            font-family: Arial;
+        }
+
+        #box {
+            width: 100px;
+            height: 100px;
+            background:darkgreen;
+            position: absolute;
+            top: 100px;
+            left: 100px;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Click the Moving Box</h2>
+    <p>Score: <span id="score">0</span></p>
+
+    <div id="box"></div>
+
+    <script>
+        $(function () {
+            let score = 0;
+
+            function moveBox() {
+                let x = Math.random() * (window.innerWidth - 120);
+                let y = Math.random() * (window.innerHeight - 120);
+
+                $("#box").css({
+                    left: x + "px",
+                    top: y + "px"
+                });
+            }
+
+            // Move box every 800ms
+            setInterval(moveBox, 1000);
+
+            // On clicking the box
+            $("#box").click(function () {
+                score++;
+                $("#score").text(score);
+                moveBox();
+            });
+        });
+    </script>
+
+</body>
+</html>
