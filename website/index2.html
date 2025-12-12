@@ -6,35 +6,33 @@
     <title>Website</title>
 </head>
   <style>
-  /* ensure full height */
+  
   html, body {
     height: 100%;
     margin: 0;
   }
 
-  /* Put the background on the body (not on every element) */
+  
   body {
-    /* make sure smvit.jpg is in the same folder as the HTML or update the path */
+    
     background-image: url('smvit.jpg');
-    background-size: cover;           /* cover the whole viewport */
-    background-position: center;      /* center the photo */
+    background-size: cover;           
+    background-position: center;      
     background-repeat: no-repeat;
-    background-attachment: fixed;     /* optional — keeps image fixed while scrolling */
+    background-attachment: fixed;    
     font-family: sans-serif;
-    color: #0b1b2b;                   /* dark text for readability */
+    color: #0b1b2b;                   
   }
 
   nav {
-    /* remove solid blue so the background shows through */
+    
     background-color: transparent;
     color: white;
     padding: 15px 20px;
     display:flex;
     justify-content: space-between;
     align-items:center;
-    /* optional semi-transparent bar if you still want contrast:
-       background: rgba(0,0,0,0.25);
-    */
+    
   }
 
   nav ul{
@@ -43,15 +41,14 @@
     gap: 20px;
   }
   nav a{
-    color: #fff;        /* links visible on top of image */
+    color: #fff;        
     text-decoration: none;
   }
 
   .hello{
     text-align: center;
     padding: 80px 20px;
-    /* if you want a subtle overlay behind the hero text */
-    /* background: rgba(255,255,255,0.04); */
+    
   }
   .hello h1{
     font-size: 2rem;
@@ -72,7 +69,7 @@
     padding: 15px 20px;
     text-align: center;
     line-height: 1.6;
-    background: transparent; /* important so the photo shows through */
+    background: transparent; 
   }
 
   .sectioncourses{
@@ -85,23 +82,23 @@
     background: transparent;
   }
 
-  /* cards normally have solid bg; use translucent so image is still visible */
+  
   .card{
     padding: 20px;
-    background: rgba(255,255,255,0.85); /* slightly see-through white */
+    background: rgba(255,255,255,0.85); 
     border-radius: 8px;
     max-width: 400px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.25);
   }
 
-  /* small responsive fix for the <h2> inside the grid (you had an h2 as a child) */
+  
   .sectioncourses > h2 {
     grid-column: 1 / -1;
     text-align: left;
     margin-bottom: 8px;
   }
 
-  /* contact form look */
+  
   .contact-form input {
     margin:auto;
     max-width: 500px;
